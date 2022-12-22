@@ -1,0 +1,188 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+.header__nav {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  align-items: center;
+  background-color: #222831; }
+  .header__nav h1 {
+    color: #EEEEEE; }
+
+.header__menu ul {
+  list-style: none;
+  display: flex; }
+  .header__menu ul li:first-child button {
+    color: #00ADB5; }
+  .header__menu ul li {
+    margin: 0 2rem; }
+    .header__menu ul li .btn {
+      border: none;
+      color: #EEEEEE;
+      background-color: transparent;
+      font-size: 2rem;
+      font-weight: 800;
+      transition: all 0.2s;
+      cursor: pointer; }
+      .header__menu ul li .btn:hover {
+        color: #00ADB5;
+        transform: translateY(1px); }
+
+.landing__page {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/taj.jpg);
+  height: 100vh;
+  background-size: cover; }
+  .landing__page-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35rem; }
+  .landing__page h3 {
+    font-size: 10rem;
+    color: #fff;
+    padding-bottom: 1rem; }
+  .landing__page h1 {
+    font-size: 5rem;
+    color: #fff;
+    padding-bottom: 1rem; }
+  .landing__page p {
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 3rem; }
+  .landing__page .button__btn {
+    border: none;
+    padding: 1rem;
+    font-size: 2.5rem; }
+  .landing__page .button__btn-1 {
+    background-color: #fff;
+    color: black;
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    margin-right: 2.5rem; }
+    .landing__page .button__btn-1:hover {
+      transform: translateY(-2px); }
+  .landing__page .button__btn-2 {
+    background-color: #222831;
+    padding: 1rem 4rem;
+    color: #fff;
+    border-radius: 50px;
+    margin-left: 2.5rem;
+    transition: all 0.2s; }
+    .landing__page .button__btn-2:hover {
+      color: #fff;
+      background-color: #393E46;
+      transform: translateY(-2px); }
+
+.tour__guide {
+  padding: 10rem 0; }
+  .tour__guide-card {
+    width: 18rem;
+    height: 20rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+    position: relative; }
+    .tour__guide-card:hover {
+      transform: translateY(-10px); }
+    .tour__guide-card h4 {
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+  .tour__guide-icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #393E46, #00ADB5);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem; }
+
+.footer__menu {
+  background-color: #222831; }
+  .footer__menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem; }
+  .footer__menu ul li button {
+    border: none;
+    color: #EEEEEE;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: 800;
+    transition: all 0.2s;
+    cursor: pointer;
+    padding-top: 5rem;
+    padding-bottom: 4rem; }
+    .footer__menu ul li button:hover {
+      color: #00ADB5;
+      transform: translateY(1px); }
+  .footer__menu p {
+    color: #EEEEEE;
+    font-size: 1.5rem;
+    padding: 0 50rem;
+    text-align: center;
+    padding-bottom: 2rem; }
+
+.tour {
+  background-color: #EEEEEE;
+  padding: 5rem 20rem; }
+  .tour__guide {
+    display: flex;
+    justify-content: space-between; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+  grid-gap: 2.5rem;
+  padding: 10rem 2rem;
+  background-color: #222831; }
+  .gallery__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border: 4px solid #00ADB5; }
+  .gallery__item--1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4; }
+  .gallery__item--2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2; }
+  .gallery__item--3 {
+    grid-column: 5 / span 3;
+    grid-row: 1 / span 3; }
+  .gallery__item--4 {
+    grid-column: 8 / span 1;
+    grid-row: 1 / span 3; }
+  .gallery__item--5 {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2; }
+  .gallery__item--6 {
+    grid-column: 5 / span 3;
+    grid-row: 4 / span 4; }
+  .gallery__item--7 {
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 3; }
+  .gallery__item--8 {
+    grid-column: 8 / 9;
+    grid-row: 4/ span 2; }
+  .gallery__item--10 {
+    grid-column: 4 / span 1;
+    grid-row: 6 / span 2; }
+  .gallery__item--11 {
+    grid-column: 8 / span 1;
+    grid-row: 6 / span 2; }
